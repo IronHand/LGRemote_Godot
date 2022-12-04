@@ -1,0 +1,715 @@
+[gd_scene load_steps=93 format=2]
+
+[ext_resource path="res://LGRemote.gd" type="Script" id=1]
+[ext_resource path="res://img/button_0.png" type="Texture" id=2]
+[ext_resource path="res://img/button_1_down.png" type="Texture" id=3]
+[ext_resource path="res://img/button_2.png" type="Texture" id=4]
+[ext_resource path="res://img/button_6.png" type="Texture" id=5]
+[ext_resource path="res://img/button_9.png" type="Texture" id=6]
+[ext_resource path="res://img/button_3.png" type="Texture" id=7]
+[ext_resource path="res://img/button_7.png" type="Texture" id=8]
+[ext_resource path="res://img/button_4.png" type="Texture" id=9]
+[ext_resource path="res://img/button_1.png" type="Texture" id=10]
+[ext_resource path="res://img/button_8.png" type="Texture" id=11]
+[ext_resource path="res://img/button_5.png" type="Texture" id=12]
+[ext_resource path="res://img/button_power_down.png" type="Texture" id=13]
+[ext_resource path="res://img/button_power.png" type="Texture" id=14]
+[ext_resource path="res://img/remote_back.png" type="Texture" id=15]
+[ext_resource path="res://img/button_8_down.png" type="Texture" id=16]
+[ext_resource path="res://img/button_9_down.png" type="Texture" id=17]
+[ext_resource path="res://img/button_7_down.png" type="Texture" id=18]
+[ext_resource path="res://img/button_6_down.png" type="Texture" id=19]
+[ext_resource path="res://img/button_5_down.png" type="Texture" id=20]
+[ext_resource path="res://img/button_3_down.png" type="Texture" id=21]
+[ext_resource path="res://img/button_2_down.png" type="Texture" id=22]
+[ext_resource path="res://img/button_0_down.png" type="Texture" id=23]
+[ext_resource path="res://img/button_4_down.png" type="Texture" id=24]
+[ext_resource path="res://anna.tres" type="DynamicFont" id=25]
+[ext_resource path="res://img/button_up.png" type="Texture" id=26]
+[ext_resource path="res://img/button_up_down.png" type="Texture" id=27]
+[ext_resource path="res://img/button_down_down.png" type="Texture" id=28]
+[ext_resource path="res://img/button_down.png" type="Texture" id=29]
+[ext_resource path="res://img/button_info.png" type="Texture" id=30]
+[ext_resource path="res://img/button_info_down.png" type="Texture" id=31]
+[ext_resource path="res://img/button_empty.png" type="Texture" id=32]
+[ext_resource path="res://img/button_empty_down.png" type="Texture" id=33]
+[ext_resource path="res://img/button_Prev.png" type="Texture" id=34]
+[ext_resource path="res://img/button_Prev_down.png" type="Texture" id=35]
+[ext_resource path="res://img/button_Next_down.png" type="Texture" id=36]
+[ext_resource path="res://img/button_stop.png" type="Texture" id=37]
+[ext_resource path="res://img/button_stop_down.png" type="Texture" id=38]
+[ext_resource path="res://img/button_pause.png" type="Texture" id=39]
+[ext_resource path="res://img/button_Next.png" type="Texture" id=40]
+[ext_resource path="res://img/button_pause_down.png" type="Texture" id=41]
+[ext_resource path="res://img/button_play_down.png" type="Texture" id=42]
+[ext_resource path="res://img/button_play.png" type="Texture" id=43]
+[ext_resource path="res://normalFont.tres" type="DynamicFont" id=44]
+[ext_resource path="res://img/button_Mute.png" type="Texture" id=45]
+[ext_resource path="res://img/button_Mute_down.png" type="Texture" id=46]
+[ext_resource path="res://img/button_Back_down.png" type="Texture" id=47]
+[ext_resource path="res://img/button_Back.png" type="Texture" id=48]
+[ext_resource path="res://img/remote_back_black.png" type="Texture" id=49]
+[ext_resource path="res://img/button_left.png" type="Texture" id=50]
+[ext_resource path="res://img/button_right.png" type="Texture" id=51]
+[ext_resource path="res://img/button_right_down.png" type="Texture" id=52]
+[ext_resource path="res://img/button_left_down.png" type="Texture" id=53]
+[ext_resource path="res://img/button_home.png" type="Texture" id=54]
+[ext_resource path="res://img/button_home_down.png" type="Texture" id=55]
+[ext_resource path="res://img/button_netflix.png" type="Texture" id=56]
+[ext_resource path="res://img/button_netflix_down.png" type="Texture" id=57]
+[ext_resource path="res://img/button_prime.png" type="Texture" id=58]
+[ext_resource path="res://img/button_prime_down.png" type="Texture" id=59]
+[ext_resource path="res://img/button_textinput.png" type="Texture" id=60]
+[ext_resource path="res://img/button_textinput_down.png" type="Texture" id=61]
+[ext_resource path="res://img/button_tv.png" type="Texture" id=62]
+[ext_resource path="res://img/button_tv_down.png" type="Texture" id=63]
+[ext_resource path="res://img/button_shift.png" type="Texture" id=64]
+[ext_resource path="res://img/button_shift_down.png" type="Texture" id=65]
+[ext_resource path="res://img/button_enter_down.png" type="Texture" id=66]
+[ext_resource path="res://img/button_enter.png" type="Texture" id=67]
+[ext_resource path="res://img/button_del.png" type="Texture" id=68]
+[ext_resource path="res://img/button_del_down.png" type="Texture" id=69]
+[ext_resource path="res://img/button_green_down.png" type="Texture" id=70]
+[ext_resource path="res://img/button_yellow_down.png" type="Texture" id=71]
+[ext_resource path="res://img/button_blue.png" type="Texture" id=72]
+[ext_resource path="res://img/button_red.png" type="Texture" id=73]
+[ext_resource path="res://img/button_blue_down.png" type="Texture" id=74]
+[ext_resource path="res://img/button_green.png" type="Texture" id=75]
+[ext_resource path="res://img/button_red_down.png" type="Texture" id=76]
+[ext_resource path="res://img/button_yellow.png" type="Texture" id=77]
+[ext_resource path="res://img/connection.png" type="Texture" id=78]
+[ext_resource path="res://img/button_BackUp.png" type="Texture" id=79]
+[ext_resource path="res://img/button_BackUp_down.png" type="Texture" id=80]
+[ext_resource path="res://img/button_info2_down.png" type="Texture" id=81]
+[ext_resource path="res://img/button_info2.png" type="Texture" id=82]
+[ext_resource path="res://img/button_cc.png" type="Texture" id=83]
+[ext_resource path="res://img/button_cc_down.png" type="Texture" id=84]
+[ext_resource path="res://img/button_sidebar.png" type="Texture" id=85]
+[ext_resource path="res://img/button_sidebar_down.png" type="Texture" id=86]
+[ext_resource path="res://img/button_go.png" type="Texture" id=87]
+[ext_resource path="res://img/button_go_down.png" type="Texture" id=88]
+[ext_resource path="res://img/button_search_down.png" type="Texture" id=89]
+[ext_resource path="res://img/button_search.png" type="Texture" id=90]
+[ext_resource path="res://img/button_exit.png" type="Texture" id=91]
+[ext_resource path="res://img/button_exit_down.png" type="Texture" id=92]
+
+[node name="LGRemote" type="Node2D" groups=["Main"]]
+script = ExtResource( 1 )
+
+[node name="OutTimer" type="Timer" parent="."]
+
+[node name="ShutdownTimer" type="Timer" parent="."]
+
+[node name="RemoteBack" type="Sprite" parent="."]
+position = Vector2( 287, 512 )
+scale = Vector2( 1.097, 1.097 )
+texture = ExtResource( 15 )
+
+[node name="RemoteBackBlack" type="Sprite" parent="."]
+modulate = Color( 0, 0, 0, 0.698039 )
+position = Vector2( 278, 4.5 )
+scale = Vector2( 1, 0.123 )
+texture = ExtResource( 49 )
+
+[node name="PowerButton" type="TextureButton" parent="."]
+margin_left = 9.0
+margin_top = 9.0
+margin_right = 59.0
+margin_bottom = 59.0
+texture_normal = ExtResource( 14 )
+texture_pressed = ExtResource( 13 )
+expand = true
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 55.0
+margin_top = 1129.0
+margin_right = 247.0
+margin_bottom = 1215.0
+text = "Send"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 293.0
+margin_top = 1128.0
+margin_right = 485.0
+margin_bottom = 1214.0
+text = "Close"
+
+[node name="InfoLabel" type="Label" parent="."]
+margin_left = 64.0
+margin_top = 9.0
+margin_right = 2657.0
+margin_bottom = 342.0
+rect_scale = Vector2( 0.15, 0.15 )
+custom_fonts/font = ExtResource( 25 )
+text = "Infos"
+align = 1
+
+[node name="Connection" type="Sprite" parent="."]
+visible = false
+position = Vector2( 82, 34 )
+scale = Vector2( 0.361111, 0.361111 )
+texture = ExtResource( 78 )
+
+[node name="Keys" type="Node2D" parent="."]
+position = Vector2( 122, 75 )
+
+[node name="Ch_1" type="TextureButton" parent="Keys"]
+margin_top = 210.0
+margin_right = 100.0
+margin_bottom = 310.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 3 )
+expand = true
+
+[node name="Ch_2" type="TextureButton" parent="Keys"]
+margin_left = 105.0
+margin_top = 210.0
+margin_right = 205.0
+margin_bottom = 310.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 22 )
+expand = true
+
+[node name="Ch_3" type="TextureButton" parent="Keys"]
+margin_left = 210.0
+margin_top = 210.0
+margin_right = 310.0
+margin_bottom = 310.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 21 )
+expand = true
+
+[node name="Ch_4" type="TextureButton" parent="Keys"]
+margin_top = 105.0
+margin_right = 100.0
+margin_bottom = 205.0
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 24 )
+expand = true
+
+[node name="Ch_5" type="TextureButton" parent="Keys"]
+margin_left = 105.0
+margin_top = 105.0
+margin_right = 205.0
+margin_bottom = 205.0
+texture_normal = ExtResource( 12 )
+texture_pressed = ExtResource( 20 )
+expand = true
+
+[node name="Ch_6" type="TextureButton" parent="Keys"]
+margin_left = 210.0
+margin_top = 105.0
+margin_right = 310.0
+margin_bottom = 205.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 19 )
+expand = true
+
+[node name="Ch_7" type="TextureButton" parent="Keys"]
+margin_right = 100.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 18 )
+expand = true
+
+[node name="Ch_8" type="TextureButton" parent="Keys"]
+margin_left = 105.0
+margin_right = 205.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 16 )
+expand = true
+
+[node name="Ch_9" type="TextureButton" parent="Keys"]
+margin_left = 210.0
+margin_right = 310.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 17 )
+expand = true
+
+[node name="Ch_0" type="TextureButton" parent="Keys"]
+margin_left = 105.0
+margin_top = 315.0
+margin_right = 205.0
+margin_bottom = 415.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 23 )
+expand = true
+
+[node name="Ch_Del" type="TextureButton" parent="Keys"]
+margin_top = 315.0
+margin_right = 100.0
+margin_bottom = 415.0
+texture_normal = ExtResource( 62 )
+texture_pressed = ExtResource( 63 )
+expand = true
+
+[node name="B_Netflix" type="TextureButton" parent="Keys"]
+margin_left = -105.0
+margin_right = -5.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 56 )
+texture_pressed = ExtResource( 57 )
+expand = true
+
+[node name="B_Prime" type="TextureButton" parent="Keys"]
+margin_left = 315.0
+margin_right = 415.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 58 )
+texture_pressed = ExtResource( 59 )
+expand = true
+
+[node name="B_InputText" type="TextureButton" parent="Keys"]
+margin_left = 315.0
+margin_top = 105.0
+margin_right = 415.0
+margin_bottom = 205.0
+texture_normal = ExtResource( 60 )
+texture_pressed = ExtResource( 61 )
+expand = true
+
+[node name="B_Info" type="TextureButton" parent="Keys"]
+margin_left = 210.0
+margin_top = 315.0
+margin_right = 310.0
+margin_bottom = 415.0
+texture_normal = ExtResource( 30 )
+texture_pressed = ExtResource( 31 )
+expand = true
+
+[node name="Ch_Up" type="TextureButton" parent="Keys"]
+margin_left = 315.0
+margin_top = 210.0
+margin_right = 415.0
+margin_bottom = 310.0
+texture_normal = ExtResource( 26 )
+texture_pressed = ExtResource( 27 )
+expand = true
+
+[node name="Ch_Down" type="TextureButton" parent="Keys"]
+margin_left = 315.0
+margin_top = 315.0
+margin_right = 415.0
+margin_bottom = 415.0
+texture_normal = ExtResource( 29 )
+texture_pressed = ExtResource( 28 )
+expand = true
+
+[node name="B_VUp" type="TextureButton" parent="Keys"]
+margin_left = -105.0
+margin_top = 105.0
+margin_right = -5.0
+margin_bottom = 205.0
+texture_normal = ExtResource( 26 )
+texture_pressed = ExtResource( 27 )
+expand = true
+
+[node name="B_VMute" type="TextureButton" parent="Keys"]
+margin_left = -105.0
+margin_top = 210.0
+margin_right = -5.0
+margin_bottom = 310.0
+texture_normal = ExtResource( 45 )
+texture_pressed = ExtResource( 46 )
+expand = true
+
+[node name="B_VDown" type="TextureButton" parent="Keys"]
+margin_left = -105.0
+margin_top = 315.0
+margin_right = -5.0
+margin_bottom = 415.0
+texture_normal = ExtResource( 29 )
+texture_pressed = ExtResource( 28 )
+expand = true
+
+[node name="B_Play" type="TextureButton" parent="Keys"]
+margin_left = 205.0
+margin_top = 450.0
+margin_right = 305.0
+margin_bottom = 550.0
+texture_normal = ExtResource( 43 )
+texture_pressed = ExtResource( 42 )
+expand = true
+
+[node name="B_Pause" type="TextureButton" parent="Keys"]
+visible = false
+margin_top = 450.0
+margin_right = 100.0
+margin_bottom = 550.0
+texture_normal = ExtResource( 39 )
+texture_pressed = ExtResource( 41 )
+expand = true
+
+[node name="B_Stop" type="TextureButton" parent="Keys"]
+margin_left = 105.0
+margin_top = 450.0
+margin_right = 205.0
+margin_bottom = 550.0
+texture_normal = ExtResource( 37 )
+texture_pressed = ExtResource( 38 )
+expand = true
+
+[node name="B_Next" type="TextureButton" parent="Keys"]
+margin_left = 315.0
+margin_top = 450.0
+margin_right = 415.0
+margin_bottom = 550.0
+texture_normal = ExtResource( 40 )
+texture_pressed = ExtResource( 36 )
+expand = true
+
+[node name="B_Prev" type="TextureButton" parent="Keys"]
+margin_top = 450.0
+margin_right = 100.0
+margin_bottom = 550.0
+texture_normal = ExtResource( 34 )
+texture_pressed = ExtResource( 35 )
+expand = true
+
+[node name="B_Shift" type="TextureButton" parent="Keys"]
+margin_left = -105.0
+margin_top = 450.0
+margin_right = -5.0
+margin_bottom = 550.0
+toggle_mode = true
+texture_normal = ExtResource( 64 )
+texture_pressed = ExtResource( 65 )
+expand = true
+
+[node name="B_Red" type="TextureButton" parent="Keys"]
+visible = false
+margin_top = 450.0
+margin_right = 100.0
+margin_bottom = 550.0
+texture_normal = ExtResource( 73 )
+texture_pressed = ExtResource( 76 )
+expand = true
+
+[node name="B_Green" type="TextureButton" parent="Keys"]
+visible = false
+margin_left = 105.0
+margin_top = 450.0
+margin_right = 205.0
+margin_bottom = 550.0
+texture_normal = ExtResource( 75 )
+texture_pressed = ExtResource( 70 )
+expand = true
+
+[node name="B_Yellow" type="TextureButton" parent="Keys"]
+visible = false
+margin_left = 205.0
+margin_top = 450.0
+margin_right = 305.0
+margin_bottom = 550.0
+texture_normal = ExtResource( 77 )
+texture_pressed = ExtResource( 71 )
+expand = true
+
+[node name="B_Blue" type="TextureButton" parent="Keys"]
+visible = false
+margin_left = 315.0
+margin_top = 450.0
+margin_right = 415.0
+margin_bottom = 550.0
+texture_normal = ExtResource( 72 )
+texture_pressed = ExtResource( 74 )
+expand = true
+
+[node name="B_OK" type="TextureButton" parent="Keys"]
+margin_left = 147.0
+margin_top = 679.0
+margin_right = 297.0
+margin_bottom = 829.0
+texture_normal = ExtResource( 32 )
+texture_pressed = ExtResource( 33 )
+expand = true
+
+[node name="B_Right" type="TextureButton" parent="Keys"]
+margin_left = 307.0
+margin_top = 705.0
+margin_right = 407.0
+margin_bottom = 805.0
+texture_normal = ExtResource( 51 )
+texture_pressed = ExtResource( 52 )
+expand = true
+
+[node name="B_Left" type="TextureButton" parent="Keys"]
+margin_left = 38.0
+margin_top = 705.0
+margin_right = 138.0
+margin_bottom = 805.0
+texture_normal = ExtResource( 50 )
+texture_pressed = ExtResource( 53 )
+expand = true
+
+[node name="B_MDown" type="TextureButton" parent="Keys"]
+margin_left = 173.0
+margin_top = 837.0
+margin_right = 273.0
+margin_bottom = 937.0
+texture_normal = ExtResource( 29 )
+texture_pressed = ExtResource( 28 )
+expand = true
+
+[node name="B_MUp" type="TextureButton" parent="Keys"]
+margin_left = 173.0
+margin_top = 571.0
+margin_right = 273.0
+margin_bottom = 671.0
+texture_normal = ExtResource( 26 )
+texture_pressed = ExtResource( 27 )
+expand = true
+
+[node name="B_Back" type="TextureButton" parent="Keys"]
+margin_left = -105.0
+margin_top = 832.0
+margin_right = -5.0
+margin_bottom = 932.0
+texture_normal = ExtResource( 48 )
+texture_pressed = ExtResource( 47 )
+expand = true
+
+[node name="B_Home" type="TextureButton" parent="Keys"]
+margin_left = -105.0
+margin_top = 568.0
+margin_right = -5.0
+margin_bottom = 668.0
+texture_normal = ExtResource( 54 )
+texture_pressed = ExtResource( 55 )
+expand = true
+
+[node name="OutputLabel" type="Label" parent="Keys"]
+margin_left = 334.0
+margin_top = -76.0
+margin_right = 778.0
+margin_bottom = 256.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_fonts/font = ExtResource( 25 )
+align = 1
+
+[node name="Info" type="TextureButton" parent="Keys"]
+visible = false
+margin_left = 210.0
+margin_top = 315.0
+margin_right = 310.0
+margin_bottom = 415.0
+texture_normal = ExtResource( 82 )
+texture_pressed = ExtResource( 81 )
+expand = true
+
+[node name="Programm" type="Node2D" parent="."]
+visible = false
+
+[node name="SecureButton" type="Button" parent="Programm"]
+margin_top = -1.0
+margin_right = 557.0
+margin_bottom = 1033.0
+flat = true
+
+[node name="Back" type="Sprite" parent="Programm"]
+modulate = Color( 0, 0, 0, 0.941176 )
+scale = Vector2( 0.553, 1.052 )
+texture = ExtResource( 49 )
+centered = false
+
+[node name="ProgrammLabel" type="RichTextLabel" parent="Programm"]
+margin_left = 9.0
+margin_right = 3562.0
+margin_bottom = 6053.0
+rect_scale = Vector2( 0.15, 0.15 )
+custom_fonts/normal_font = ExtResource( 44 )
+bbcode_enabled = true
+bbcode_text = "[center]Programm[/center]"
+meta_underlined = false
+text = "Programm"
+
+[node name="BackButton" type="TextureButton" parent="Programm"]
+margin_left = 5.0
+margin_top = 921.0
+margin_right = 105.0
+margin_bottom = 1021.0
+texture_normal = ExtResource( 79 )
+texture_pressed = ExtResource( 80 )
+expand = true
+
+[node name="TextInput" type="Node2D" parent="."]
+visible = false
+
+[node name="SecureButton" type="Button" parent="TextInput"]
+margin_top = -1.0
+margin_right = 557.0
+margin_bottom = 517.0
+flat = true
+
+[node name="Back" type="Sprite" parent="TextInput"]
+modulate = Color( 0, 0, 0, 0.941176 )
+scale = Vector2( 0.553, 0.511 )
+texture = ExtResource( 49 )
+centered = false
+
+[node name="InputText" type="LineEdit" parent="TextInput"]
+margin_left = 20.0
+margin_top = 28.0
+margin_right = 2080.0
+margin_bottom = 206.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_fonts/font = ExtResource( 44 )
+align = 1
+
+[node name="SendInputButton" type="TextureButton" parent="TextInput"]
+margin_left = 437.0
+margin_top = 76.0
+margin_right = 537.0
+margin_bottom = 176.0
+texture_normal = ExtResource( 67 )
+texture_pressed = ExtResource( 66 )
+expand = true
+
+[node name="CC" type="TextureButton" parent="TextInput"]
+margin_left = 17.0
+margin_top = 285.0
+margin_right = 117.0
+margin_bottom = 385.0
+texture_normal = ExtResource( 83 )
+texture_pressed = ExtResource( 84 )
+expand = true
+
+[node name="Dash" type="TextureButton" parent="TextInput"]
+margin_left = 437.0
+margin_top = 285.0
+margin_right = 537.0
+margin_bottom = 385.0
+texture_normal = ExtResource( 85 )
+texture_pressed = ExtResource( 86 )
+expand = true
+
+[node name="Info" type="TextureButton" parent="TextInput"]
+margin_left = 122.0
+margin_top = 285.0
+margin_right = 222.0
+margin_bottom = 385.0
+texture_normal = ExtResource( 82 )
+texture_pressed = ExtResource( 81 )
+expand = true
+
+[node name="Asterisk" type="TextureButton" parent="TextInput"]
+margin_left = 227.0
+margin_top = 285.0
+margin_right = 327.0
+margin_bottom = 385.0
+texture_normal = ExtResource( 32 )
+texture_pressed = ExtResource( 33 )
+expand = true
+
+[node name="GoSearch" type="TextureButton" parent="TextInput"]
+margin_left = 437.0
+margin_top = 180.0
+margin_right = 537.0
+margin_bottom = 280.0
+texture_normal = ExtResource( 87 )
+texture_pressed = ExtResource( 88 )
+expand = true
+
+[node name="Search" type="TextureButton" parent="TextInput"]
+margin_left = 333.0
+margin_top = 285.0
+margin_right = 433.0
+margin_bottom = 385.0
+texture_normal = ExtResource( 90 )
+texture_pressed = ExtResource( 89 )
+expand = true
+
+[node name="Custom" type="TextureButton" parent="TextInput"]
+margin_left = 228.0
+margin_top = 181.0
+margin_right = 328.0
+margin_bottom = 281.0
+texture_normal = ExtResource( 32 )
+texture_pressed = ExtResource( 33 )
+expand = true
+
+[node name="Exit" type="TextureButton" parent="TextInput"]
+margin_left = 17.0
+margin_top = 397.0
+margin_right = 117.0
+margin_bottom = 497.0
+texture_normal = ExtResource( 91 )
+texture_pressed = ExtResource( 92 )
+expand = true
+
+[node name="DelInputButton" type="TextureButton" parent="TextInput"]
+margin_left = 17.0
+margin_top = 76.0
+margin_right = 117.0
+margin_bottom = 176.0
+texture_normal = ExtResource( 68 )
+texture_pressed = ExtResource( 69 )
+expand = true
+
+[node name="CloseInputButton" type="TextureButton" parent="TextInput"]
+margin_left = 438.0
+margin_top = 397.0
+margin_right = 538.0
+margin_bottom = 497.0
+texture_normal = ExtResource( 79 )
+texture_pressed = ExtResource( 80 )
+expand = true
+
+[connection signal="timeout" from="OutTimer" to="." method="_on_OutTimer_timeout"]
+[connection signal="timeout" from="ShutdownTimer" to="." method="_on_ShutdownTimer_timeout"]
+[connection signal="button_down" from="PowerButton" to="." method="_on_PowerButton_button_down"]
+[connection signal="pressed" from="PowerButton" to="." method="_on_PowerButton_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Keys/Ch_1" to="." method="_on_Ch_pressed" binds= [ 1 ]]
+[connection signal="pressed" from="Keys/Ch_2" to="." method="_on_Ch_pressed" binds= [ 2 ]]
+[connection signal="pressed" from="Keys/Ch_3" to="." method="_on_Ch_pressed" binds= [ 3 ]]
+[connection signal="pressed" from="Keys/Ch_4" to="." method="_on_Ch_pressed" binds= [ 4 ]]
+[connection signal="pressed" from="Keys/Ch_5" to="." method="_on_Ch_pressed" binds= [ 5 ]]
+[connection signal="pressed" from="Keys/Ch_6" to="." method="_on_Ch_pressed" binds= [ 6 ]]
+[connection signal="pressed" from="Keys/Ch_7" to="." method="_on_Ch_pressed" binds= [ 7 ]]
+[connection signal="pressed" from="Keys/Ch_8" to="." method="_on_Ch_pressed" binds= [ 8 ]]
+[connection signal="pressed" from="Keys/Ch_9" to="." method="_on_Ch_pressed" binds= [ 9 ]]
+[connection signal="pressed" from="Keys/Ch_0" to="." method="_on_Ch_pressed" binds= [ 0 ]]
+[connection signal="pressed" from="Keys/Ch_Del" to="." method="_on_Ch_Del_pressed"]
+[connection signal="pressed" from="Keys/B_Netflix" to="." method="_on_B_Netflix_pressed"]
+[connection signal="pressed" from="Keys/B_Prime" to="." method="_on_B_Prime_pressed"]
+[connection signal="pressed" from="Keys/B_InputText" to="." method="_on_B_InputText_pressed"]
+[connection signal="pressed" from="Keys/B_Info" to="." method="_on_B_Info_pressed"]
+[connection signal="pressed" from="Keys/Ch_Up" to="." method="_on_Ch_Up_pressed"]
+[connection signal="pressed" from="Keys/Ch_Down" to="." method="_on_Ch_Down_pressed"]
+[connection signal="pressed" from="Keys/B_VUp" to="." method="_on_B_VUp_pressed"]
+[connection signal="pressed" from="Keys/B_VMute" to="." method="_on_B_VMute_pressed"]
+[connection signal="pressed" from="Keys/B_VDown" to="." method="_on_B_VDown_pressed"]
+[connection signal="pressed" from="Keys/B_Play" to="." method="_on_B_Play_pressed"]
+[connection signal="pressed" from="Keys/B_Pause" to="." method="_on_B_Pause_pressed"]
+[connection signal="pressed" from="Keys/B_Stop" to="." method="_on_B_Stop_pressed"]
+[connection signal="pressed" from="Keys/B_Next" to="." method="_on_B_Next_pressed"]
+[connection signal="pressed" from="Keys/B_Prev" to="." method="_on_B_Prev_pressed"]
+[connection signal="pressed" from="Keys/B_Shift" to="." method="_on_B_Shift_pressed"]
+[connection signal="pressed" from="Keys/B_Red" to="." method="_on_B_Red_pressed"]
+[connection signal="pressed" from="Keys/B_Green" to="." method="_on_B_Green_pressed"]
+[connection signal="pressed" from="Keys/B_Yellow" to="." method="_on_B_Yellow_pressed"]
+[connection signal="pressed" from="Keys/B_Blue" to="." method="_on_B_Blue_pressed"]
+[connection signal="pressed" from="Keys/B_OK" to="." method="_on_B_OK_pressed"]
+[connection signal="pressed" from="Keys/B_Right" to="." method="_on_B_Right_pressed"]
+[connection signal="pressed" from="Keys/B_Left" to="." method="_on_B_Left_pressed"]
+[connection signal="pressed" from="Keys/B_MDown" to="." method="_on_B_MDown_pressed"]
+[connection signal="pressed" from="Keys/B_MUp" to="." method="_on_B_MUp_pressed"]
+[connection signal="pressed" from="Keys/B_Back" to="." method="_on_B_Back_pressed"]
+[connection signal="pressed" from="Keys/B_Home" to="." method="_on_B_Home_pressed"]
+[connection signal="pressed" from="Keys/Info" to="." method="_on_Info_pressed"]
+[connection signal="pressed" from="Programm/BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="pressed" from="TextInput/SendInputButton" to="." method="_on_SendInputButton_pressed"]
+[connection signal="pressed" from="TextInput/CC" to="." method="_on_CC_pressed"]
+[connection signal="pressed" from="TextInput/Dash" to="." method="_on_Dash_pressed"]
+[connection signal="pressed" from="TextInput/Info" to="." method="_on_Info_pressed"]
+[connection signal="pressed" from="TextInput/Asterisk" to="." method="_on_Asterisk_pressed"]
+[connection signal="pressed" from="TextInput/GoSearch" to="." method="_on_GoSearch_pressed"]
+[connection signal="pressed" from="TextInput/Search" to="." method="_on_Search_pressed"]
+[connection signal="pressed" from="TextInput/Custom" to="." method="_on_Custom_pressed"]
+[connection signal="pressed" from="TextInput/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="TextInput/DelInputButton" to="." method="_on_DelInputButton_pressed"]
+[connection signal="pressed" from="TextInput/CloseInputButton" to="." method="_on_CloseInputButton_pressed"]

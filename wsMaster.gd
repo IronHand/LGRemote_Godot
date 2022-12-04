@@ -1,7 +1,7 @@
 extends Node
 
-export var tvIP = "192.168.178.76"
-export var websocket_url = "ws://192.168.178.76:3000"
+export var tvIP = ""
+export var websocket_url = "ws://:3000"
 var clientKey = ""
 var currentChannel = 0
 var currentChannelData = {}
@@ -43,9 +43,10 @@ func _ready():
 	
 	wsPointer.connect("data_received", self, "_on_input_data")
 	
-	loadKey()
-	
-	connectToTV()
+	if loadKey() == -1:
+		return
+	else:
+		connectToTV()
 	
 func setURL(ip):
 	tvIP = ip
@@ -390,7 +391,8 @@ func loadKey():
 	var save_file = File.new()
 	
 	if not save_file.file_exists("user://keyFile"):
-		return # Error! We don't have to load.
+		get_tree().get_nodes_in_group("Main")[0].get_node("IPInput").visible = true
+		return -1
 	
 	save_file.open("user://keyFile", File.READ)
 	var dataLine = save_file.get_line()

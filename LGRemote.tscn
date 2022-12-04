@@ -135,9 +135,9 @@ margin_bottom = 1214.0
 text = "Close"
 
 [node name="InfoLabel" type="Label" parent="."]
-margin_left = 64.0
+margin_left = 103.0
 margin_top = 9.0
-margin_right = 2657.0
+margin_right = 2436.0
 margin_bottom = 342.0
 rect_scale = Vector2( 0.15, 0.15 )
 custom_fonts/font = ExtResource( 25 )
@@ -657,6 +657,52 @@ texture_normal = ExtResource( 79 )
 texture_pressed = ExtResource( 80 )
 expand = true
 
+[node name="IPInput" type="Node2D" parent="."]
+visible = false
+
+[node name="RemoteBackBlack" type="Sprite" parent="IPInput"]
+position = Vector2( 273, 512.25 )
+scale = Vector2( 0.584, 1.0625 )
+texture = ExtResource( 49 )
+
+[node name="IPEdit" type="LineEdit" parent="IPInput"]
+margin_left = 32.0
+margin_top = 228.0
+margin_right = 1659.0
+margin_bottom = 406.0
+rect_scale = Vector2( 0.3, 0.3 )
+custom_fonts/font = ExtResource( 44 )
+text = "192.168.178.xx"
+align = 1
+
+[node name="Label" type="Label" parent="IPInput"]
+margin_left = 14.0
+margin_top = 167.0
+margin_right = 1826.0
+margin_bottom = 335.0
+rect_scale = Vector2( 0.29, 0.29 )
+custom_fonts/font = ExtResource( 44 )
+text = "Enter IP of your TV System"
+align = 1
+
+[node name="Button" type="Button" parent="IPInput"]
+margin_left = 32.0
+margin_top = 807.0
+margin_right = 2467.0
+margin_bottom = 1282.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_fonts/font = ExtResource( 44 )
+text = "Connect"
+
+[node name="ButtonIPClose" type="Button" parent="IPInput"]
+margin_left = 32.0
+margin_top = 911.0
+margin_right = 2467.0
+margin_bottom = 1386.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_fonts/font = ExtResource( 44 )
+text = "Close"
+
 [connection signal="timeout" from="OutTimer" to="." method="_on_OutTimer_timeout"]
 [connection signal="timeout" from="ShutdownTimer" to="." method="_on_ShutdownTimer_timeout"]
 [connection signal="button_down" from="PowerButton" to="." method="_on_PowerButton_button_down"]
@@ -713,3 +759,5 @@ expand = true
 [connection signal="pressed" from="TextInput/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="TextInput/DelInputButton" to="." method="_on_DelInputButton_pressed"]
 [connection signal="pressed" from="TextInput/CloseInputButton" to="." method="_on_CloseInputButton_pressed"]
+[connection signal="pressed" from="IPInput/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="IPInput/ButtonIPClose" to="." method="_on_ButtonIPClose_pressed"]

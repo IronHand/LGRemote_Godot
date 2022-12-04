@@ -19,7 +19,7 @@ func _on_PowerButton_pressed():
 	#WsMaster.closeClient()
 	$ShutdownTimer.stop()
 	shutdownDownButtonTimer = 0
-	#get_tree().notification(MainLoop.NOTIFICATION_WM_QUIT_REQUEST)
+	get_tree().notification(MainLoop.NOTIFICATION_WM_QUIT_REQUEST)
 	
 func _on_PowerButton_button_down():
 	$ShutdownTimer.start()
@@ -221,3 +221,12 @@ func _on_B_Shift_pressed():
 	$Keys/B_Yellow.visible = $Keys/B_Shift.pressed
 	$Keys/B_Blue.visible = $Keys/B_Shift.pressed
 	$Keys/Info.visible = $Keys/B_Shift.pressed
+
+func _on_Button_pressed():
+	WsMaster.setURL($IPInput/IPEdit.text)
+	WsMaster.loadKey()
+	WsMaster.connectToTV()
+	$IPInput.visible = false
+
+func _on_ButtonIPClose_pressed():
+	get_tree().notification(MainLoop.NOTIFICATION_WM_QUIT_REQUEST)
